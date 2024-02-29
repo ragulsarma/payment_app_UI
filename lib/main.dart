@@ -35,26 +35,26 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: HomePage(),
+        body: const HomePage(),
         bottomNavigationBar: Container(
-          height: 80,
-            decoration: BoxDecoration(
-                color: const Color(0XFF1b2d65),
+            height: 100,
+            decoration: const BoxDecoration(
+                color: Color(0XFF1b2d65),
                 borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(30),
                     topRight: Radius.circular(30))),
             child: ClipRRect(
-              borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(30.0),
-                topRight: Radius.circular(30.0),
+              borderRadius: const BorderRadius.only(
+                topLeft: Radius.circular(20.0),
+                topRight: Radius.circular(20.0),
               ),
               child: BottomNavigationBar(
                 type: BottomNavigationBarType.fixed,
                 elevation: 20,
-                backgroundColor:  const Color(0XFF1b2d65),
+                backgroundColor: const Color(0XFF1b2d65),
                 fixedColor: Colors.white,
-                unselectedIconTheme: IconThemeData(color: Colors.white),
-                items: [
+                unselectedIconTheme: const IconThemeData(color: Colors.white),
+                items: const [
                   BottomNavigationBarItem(
                       icon: Icon(Icons.file_upload_outlined), label: ''),
                   BottomNavigationBarItem(
